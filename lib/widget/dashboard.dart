@@ -1,8 +1,21 @@
 import 'package:bytebuddies/model/color.dart';
 import 'package:flutter/material.dart';
 
-class HomeDashboard extends StatelessWidget {
-  const HomeDashboard({super.key});
+class HomeDashboard extends StatefulWidget {
+  const HomeDashboard({Key? key}) : super(key: key);
+
+  @override
+  _HomeDashboardState createState() => _HomeDashboardState();
+}
+
+class _HomeDashboardState extends State<HomeDashboard> {
+  bool _textVisible = true;
+
+  void toggleTextVisibility() {
+    setState(() {
+      _textVisible = !_textVisible;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -32,10 +45,12 @@ class HomeDashboard extends StatelessWidget {
                     fontSize: 25,
                   ),
                 ),
-                Icon(
-                  Icons.visibility, // Replace with your desired icon
-                  color: AppColors.white, // Icon color
-                  size: 25, // Icon size
+                GestureDetector(
+                  onTap: toggleTextVisibility,
+                  child: Icon(
+                    _textVisible ? Icons.visibility : Icons.visibility_off,
+                    color: AppColors.white,
+                  ),
                 ),
               ],
             ),
@@ -43,10 +58,10 @@ class HomeDashboard extends StatelessWidget {
               height: 15,
             ),
             Text(
-              "₦${1000}",
+              _textVisible ? "₦1000" : "*****", // Show or hide text
               style: TextStyle(
                 fontWeight: FontWeight.w900,
-                color: AppColors.white,
+                color: Colors.white,
                 fontSize: 40,
               ),
             ),

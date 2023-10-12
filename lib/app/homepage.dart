@@ -42,7 +42,7 @@ class HomePage extends StatelessWidget {
                   thickness: 1,
                   color: Colors.grey,
                 ),
-                const HomeDashboard()
+                HomeDashboard()
               ],
             );
           },
