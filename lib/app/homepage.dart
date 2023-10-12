@@ -1,7 +1,8 @@
+import 'package:bytebuddies/widget/dashboard.dart';
 import 'package:flutter/material.dart';
 import 'package:bytebuddies/widget/button.dart';
 
-class WebLandingPage extends StatelessWidget {
+class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -41,6 +42,7 @@ class WebLandingPage extends StatelessWidget {
                   thickness: 1,
                   color: Colors.grey,
                 ),
+                const HomeDashboard()
               ],
             );
           },

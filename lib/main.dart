@@ -1,4 +1,4 @@
-import 'package:bytebuddies/ui/web/landing.page.dart';
+import 'package:bytebuddies/app/homepage.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: WebLandingPage(),
+      home: HomePage(),
     );
   }
 }
