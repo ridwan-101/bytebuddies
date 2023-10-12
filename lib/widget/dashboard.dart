@@ -65,6 +65,7 @@ class _HomeDashboardState extends State<HomeDashboard> {
                 fontSize: 40,
               ),
             ),
+            Row()
           ],
         ),
       ),
