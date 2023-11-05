@@ -14,6 +14,6 @@ class AppColors {
   static Color white = const Color(0xffFCFCFC);
   static Color secondary = const Color(0xff0047B3);
   static Color red = const Color(0xffA81400);
-  static Color green = Color.fromARGB(255, 141, 192, 120);
+  static Color green = const Color(0xff95E574);
   static Color blackLightActive = const Color(0xffB5B5B5);
 }
