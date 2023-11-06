@@ -107,6 +107,35 @@ class _HomeViewState extends State<HomeView> {
           const DataPurchaseUi(),
         ],
       )),
+      bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: AppColors.white,
+        unselectedItemColor: AppColors.black,
+        selectedItemColor: AppColors.seaGreen,
+        selectedLabelStyle: const TextStyle(
+          fontSize: 14.0,
+          fontWeight: FontWeight.bold,
+        ),
+        items: const [
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.home_outlined,
+            ),
+            label: 'Home',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.support_agent,
+            ),
+            label: 'Favorites',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.supervised_user_circle_sharp,
+            ),
+            label: 'Profile',
+          ),
+        ],
+      ),
     );
   }
 }

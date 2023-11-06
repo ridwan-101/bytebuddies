@@ -26,22 +26,25 @@ class _DataPurchaseUiState extends State<DataPurchaseUi> {
                 height: 90.h,
                 width: 170.w,
                 decoration: BoxDecoration(
-                  color: AppColors.seaGreen,
                   borderRadius: BorderRadius.circular(20.r),
+                  border: Border.all(
+                    color: AppColors.seaGreen,
+                    width: 2.0,
+                  ),
                 ),
                 child: Center(
                   child: Column(
                     children: [
                       SizedBox(height: 20.h),
-                      Icon(
+                      const Icon(
                         Icons.phone_android_outlined,
-                        color: AppColors.white,
+                        color: AppColors.seaGreen,
                       ),
                       SizedBox(height: 20.h),
                       Text(
                         "Purchase Airtime",
                         style: theme.textTheme.labelLarge?.copyWith(
-                          color: AppColors.white,
+                          color: AppColors.black,
                         ),
                       ),
                     ],
@@ -57,22 +60,25 @@ class _DataPurchaseUiState extends State<DataPurchaseUi> {
                 height: 90.h,
                 width: 170.w,
                 decoration: BoxDecoration(
-                  color: AppColors.seaGreen,
                   borderRadius: BorderRadius.circular(20.r),
+                  border: Border.all(
+                    color: AppColors.seaGreen,
+                    width: 2.0,
+                  ),
                 ),
                 child: Center(
                   child: Column(
                     children: [
                       SizedBox(height: 20.h),
-                      Icon(
+                      const Icon(
                         Icons.signal_cellular_alt,
-                        color: AppColors.white,
+                        color: AppColors.seaGreen,
                       ),
                       SizedBox(height: 20.h),
                       Text(
                         "Purchase Data",
                         style: theme.textTheme.labelLarge?.copyWith(
-                          color: AppColors.white,
+                          color: AppColors.black,
                         ),
                       ),
                     ],
@@ -94,22 +100,25 @@ class _DataPurchaseUiState extends State<DataPurchaseUi> {
                 height: 90.h,
                 width: 170.w,
                 decoration: BoxDecoration(
-                  color: AppColors.seaGreen,
                   borderRadius: BorderRadius.circular(20.r),
+                  border: Border.all(
+                    color: AppColors.seaGreen,
+                    width: 2.0,
+                  ),
                 ),
                 child: Center(
                   child: Column(
                     children: [
                       SizedBox(height: 20.h),
-                      Icon(
+                      const Icon(
                         Icons.lightbulb_outline_rounded,
-                        color: AppColors.white,
+                        color: AppColors.seaGreen,
                       ),
                       SizedBox(height: 20.h),
                       Text(
                         "Electricity",
                         style: theme.textTheme.labelLarge?.copyWith(
-                          color: AppColors.white,
+                          color: AppColors.black,
                         ),
                       ),
                     ],
@@ -125,22 +134,25 @@ class _DataPurchaseUiState extends State<DataPurchaseUi> {
                 height: 90.h,
                 width: 170.w,
                 decoration: BoxDecoration(
-                  color: AppColors.seaGreen,
                   borderRadius: BorderRadius.circular(20.r),
+                  border: Border.all(
+                    color: AppColors.seaGreen,
+                    width: 2.0,
+                  ),
                 ),
                 child: Center(
                   child: Column(
                     children: [
                       SizedBox(height: 20.h),
-                      Icon(
+                      const Icon(
                         Icons.tv,
-                        color: AppColors.white,
+                        color: AppColors.seaGreen,
                       ),
                       SizedBox(height: 20.h),
                       Text(
                         "Cable TV",
                         style: theme.textTheme.labelLarge?.copyWith(
-                          color: AppColors.white,
+                          color: AppColors.black,
                         ),
                       ),
                     ],

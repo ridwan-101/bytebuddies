@@ -26,22 +26,25 @@ class _ServicesRenderdState extends State<ServicesRenderd> {
                 height: 120.h,
                 width: 120.w,
                 decoration: BoxDecoration(
-                  color: AppColors.seaGreen,
                   borderRadius: BorderRadius.circular(20.r),
+                  border: Border.all(
+                    color: AppColors.seaGreen,
+                    width: 2.0,
+                  ),
                 ),
                 child: Center(
                   child: Column(
                     children: [
                       SizedBox(height: 20.h),
-                      Icon(
+                      const Icon(
                         Icons.account_balance_wallet,
-                        color: AppColors.white,
+                        color: AppColors.seaGreen,
                       ),
                       SizedBox(height: 20.h),
                       Text(
                         "Fund Wallet",
                         style: theme.textTheme.labelLarge?.copyWith(
-                          color: AppColors.white,
+                          color: AppColors.black,
                         ),
                       ),
                     ],
@@ -57,22 +60,25 @@ class _ServicesRenderdState extends State<ServicesRenderd> {
                 height: 120.h,
                 width: 120.w,
                 decoration: BoxDecoration(
-                  color: AppColors.seaGreen,
                   borderRadius: BorderRadius.circular(20.r),
+                  border: Border.all(
+                    color: AppColors.seaGreen,
+                    width: 2.0,
+                  ),
                 ),
                 child: Center(
                   child: Column(
                     children: [
                       SizedBox(height: 20.h),
-                      Icon(
+                      const Icon(
                         Icons.person_3_sharp,
-                        color: AppColors.white,
+                        color: AppColors.seaGreen,
                       ),
                       SizedBox(height: 20.h),
                       Text(
                         "Agent(2k😉)",
                         style: theme.textTheme.labelLarge?.copyWith(
-                          color: AppColors.white,
+                          color: AppColors.black,
                         ),
                       ),
                     ],
@@ -88,22 +94,25 @@ class _ServicesRenderdState extends State<ServicesRenderd> {
                 height: 120.h,
                 width: 120.w,
                 decoration: BoxDecoration(
-                  color: AppColors.seaGreen,
                   borderRadius: BorderRadius.circular(20.r),
+                  border: Border.all(
+                    color: AppColors.seaGreen,
+                    width: 2.0,
+                  ),
                 ),
                 child: Center(
                   child: Column(
                     children: [
                       SizedBox(height: 20.h),
-                      Icon(
+                      const Icon(
                         Icons.people,
-                        color: AppColors.white,
+                        color: AppColors.seaGreen,
                       ),
                       SizedBox(height: 20.h),
                       Text(
                         "Refer & Earn",
                         style: theme.textTheme.labelLarge?.copyWith(
-                          color: AppColors.white,
+                          color: AppColors.black,
                         ),
                       ),
                     ],
