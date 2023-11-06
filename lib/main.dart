@@ -1,4 +1,4 @@
-import 'package:bytebuddies/ui/views/home/home_view.dart';
+import 'package:bytebuddies/ui/views/bottom_navigator/bottom_navigator_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       minTextAdapt: true,
       splitScreenMode: true,
       ensureScreenSize: true,
-      builder: (context , child) {
+      builder: (context, child) {
         return MaterialApp(
           debugShowCheckedModeBanner: false,
           title: 'First Method',
@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
           home: child,
         );
       },
-      child: const HomeView(),
+      child: const BottomBarMenu(),
     );
   }
 }

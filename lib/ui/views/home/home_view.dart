@@ -1,8 +1,8 @@
 import 'package:bytebuddies/ui/common/app_colors.dart';
 import 'package:bytebuddies/ui/common/ui_helpers.dart';
-import 'package:bytebuddies/ui/extensions/palette.dart';
 import 'package:bytebuddies/ui/views/home/widget/data_purchase.dart';
 import 'package:bytebuddies/ui/views/home/widget/services_renderd.dart';
+import 'package:bytebuddies/ui/views/nav%20bar/navbar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -17,20 +17,12 @@ class _HomeViewState extends State<HomeView> {
   @override
   Widget build(BuildContext context) {
     ThemeData theme = Theme.of(context);
-    Palette? palette = theme.extension<Palette>();
+
     return Scaffold(
+      drawer: const NavBar(),
       appBar: AppBar(
         elevation: 0,
         backgroundColor: AppColors.seaGreen,
-        leading: InkWell(
-          child: Icon(
-            Icons.menu_rounded,
-            color: AppColors.white,
-          ),
-          onTap: () {
-            print("menu bar clicked");
-          },
-        ), //icone menu bar
         title: Center(
           child: Text(
             'Bytebudies',
@@ -66,8 +58,11 @@ class _HomeViewState extends State<HomeView> {
               top: 16.w,
             ),
             decoration: BoxDecoration(
-              color: AppColors.seaGreen,
               borderRadius: BorderRadius.circular(20.r),
+              border: Border.all(
+                color: AppColors.seaGreen,
+                width: 2.0,
+              ),
             ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -78,7 +73,7 @@ class _HomeViewState extends State<HomeView> {
                 Text(
                   'Wallet Balance',
                   style: theme.textTheme.titleSmall?.copyWith(
-                    color: palette?.white,
+                    color: AppColors.black,
                   ),
                 ),
                 SizedBox(
@@ -87,7 +82,7 @@ class _HomeViewState extends State<HomeView> {
                 Text(
                   "₦${1000}",
                   style: theme.textTheme.headlineLarge?.copyWith(
-                    color: palette?.white,
+                    color: AppColors.black,
                   ),
                 ),
               ],
@@ -107,35 +102,6 @@ class _HomeViewState extends State<HomeView> {
           const DataPurchaseUi(),
         ],
       )),
-      bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: AppColors.white,
-        unselectedItemColor: AppColors.black,
-        selectedItemColor: AppColors.seaGreen,
-        selectedLabelStyle: const TextStyle(
-          fontSize: 14.0,
-          fontWeight: FontWeight.bold,
-        ),
-        items: const [
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.home_outlined,
-            ),
-            label: 'Home',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.support_agent,
-            ),
-            label: 'Favorites',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.supervised_user_circle_sharp,
-            ),
-            label: 'Profile',
-          ),
-        ],
-      ),
     );
   }
 }

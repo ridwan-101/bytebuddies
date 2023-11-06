@@ -37,7 +37,7 @@ class _DataPurchaseUiState extends State<DataPurchaseUi> {
                     children: [
                       SizedBox(height: 20.h),
                       const Icon(
-                        Icons.phone_android_outlined,
+                        Icons.signal_cellular_alt,
                         color: AppColors.seaGreen,
                       ),
                       SizedBox(height: 20.h),
@@ -71,7 +71,7 @@ class _DataPurchaseUiState extends State<DataPurchaseUi> {
                     children: [
                       SizedBox(height: 20.h),
                       const Icon(
-                        Icons.signal_cellular_alt,
+                        Icons.wifi,
                         color: AppColors.seaGreen,
                       ),
                       SizedBox(height: 20.h),
