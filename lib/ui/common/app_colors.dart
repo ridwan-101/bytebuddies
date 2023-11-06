@@ -16,4 +16,8 @@ class AppColors {
   static Color red = const Color(0xffA81400);
   static Color green = const Color(0xff95E574);
   static Color blackLightActive = const Color(0xffB5B5B5);
+  static const Color emeraldGreen = Color(0xFF008000);
+  static const Color seaGreen = Color(0xFF2E8B57);
+  static const Color sageGreen = Color(0xFF9DC183);
+  static Color darkWhite = const Color(0xFFA0A0A0);
 }
