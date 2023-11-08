@@ -1,3 +1,4 @@
 {
-    "cmake.sourceDirectory": "/home/ridwan/Documents/Application/bytebuddies/linux/flutter"
+    "cmake.sourceDirectory": "/home/ridwan/Documents/Application/bytebuddies/linux/flutter",
+    "cmake.configureOnOpen": false
 }
