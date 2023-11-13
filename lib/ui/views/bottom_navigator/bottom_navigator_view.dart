@@ -1,4 +1,5 @@
 import 'package:bytebuddies/ui/common/app_colors.dart';
+import 'package:bytebuddies/ui/views/fund%20wallet/fundwallet_view.dart';
 import 'package:bytebuddies/ui/views/home/home_view.dart';
 import 'package:bytebuddies/ui/views/home/home_viewmodel.dart';
 import 'package:flutter/material.dart';
@@ -14,7 +15,7 @@ class _BottomBarMenuState extends State<BottomBarMenu> {
   int index = 0;
   final Screens = [
     const HomeView(),
-    const Wallet(),
+    const FundWalletView(),
     const Chatbot(),
     const Notifier()
   ];

@@ -1,4 +1,6 @@
 import 'package:bytebuddies/ui/common/app_colors.dart';
+import 'package:bytebuddies/ui/views/airtime%20purchase/airtime_purchase_view.dart';
+import 'package:bytebuddies/ui/views/bottom_navigator/bottom_navigator_view.dart';
 import 'package:flutter/material.dart';
 
 class NavBar extends StatelessWidget {
@@ -35,18 +37,23 @@ class NavBar extends StatelessWidget {
             decoration: BoxDecoration(color: AppColors.white),
           ),
           ListTile(
-            leading: Icon(
-              Icons.home_outlined,
-              color: AppColors.black,
-            ),
-            title: Text(
-              'Home',
-              style: theme.textTheme.titleLarge?.copyWith(
+              leading: Icon(
+                Icons.home_outlined,
                 color: AppColors.black,
               ),
-            ),
-            onTap: () => print("Menu home clicked"),
-          ),
+              title: Text(
+                'Home',
+                style: theme.textTheme.titleLarge?.copyWith(
+                  color: AppColors.black,
+                ),
+              ),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const BottomBarMenu()),
+                );
+              }),
           ListTile(
             leading: Icon(
               Icons.wifi,
@@ -71,7 +78,13 @@ class NavBar extends StatelessWidget {
                 color: AppColors.black,
               ),
             ),
-            onTap: () => print("Menu Purchase Airtime clicked"),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => const AirtimePurchaseView()),
+              );
+            },
           ),
           ListTile(
             leading: Icon(

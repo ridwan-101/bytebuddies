@@ -1,4 +1,5 @@
 import 'package:bytebuddies/ui/common/app_colors.dart';
+import 'package:bytebuddies/ui/views/airtime%20purchase/airtime_purchase_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -20,7 +21,11 @@ class _DataPurchaseUiState extends State<DataPurchaseUi> {
           children: [
             InkWell(
               onTap: () {
-                print("Purchase Airtime clicked");
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => AirtimePurchaseView()),
+                );
               },
               child: Container(
                 height: 90.h,
@@ -29,7 +34,7 @@ class _DataPurchaseUiState extends State<DataPurchaseUi> {
                   borderRadius: BorderRadius.circular(20.r),
                   border: Border.all(
                     color: AppColors.seaGreen,
-                    width: 2.0,
+                    width: 2.0.w,
                   ),
                 ),
                 child: Center(
@@ -63,7 +68,7 @@ class _DataPurchaseUiState extends State<DataPurchaseUi> {
                   borderRadius: BorderRadius.circular(20.r),
                   border: Border.all(
                     color: AppColors.seaGreen,
-                    width: 2.0,
+                    width: 2.0.w,
                   ),
                 ),
                 child: Center(
@@ -103,7 +108,7 @@ class _DataPurchaseUiState extends State<DataPurchaseUi> {
                   borderRadius: BorderRadius.circular(20.r),
                   border: Border.all(
                     color: AppColors.seaGreen,
-                    width: 2.0,
+                    width: 2.0.w,
                   ),
                 ),
                 child: Center(
@@ -137,7 +142,7 @@ class _DataPurchaseUiState extends State<DataPurchaseUi> {
                   borderRadius: BorderRadius.circular(20.r),
                   border: Border.all(
                     color: AppColors.seaGreen,
-                    width: 2.0,
+                    width: 2.0.w,
                   ),
                 ),
                 child: Center(
