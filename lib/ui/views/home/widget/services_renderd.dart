@@ -29,7 +29,7 @@ class _ServicesRenderdState extends State<ServicesRenderd> {
                   borderRadius: BorderRadius.circular(20.r),
                   border: Border.all(
                     color: AppColors.seaGreen,
-                    width: 2.0,
+                    width: 2.0.w,
                   ),
                 ),
                 child: Center(
@@ -63,7 +63,7 @@ class _ServicesRenderdState extends State<ServicesRenderd> {
                   borderRadius: BorderRadius.circular(20.r),
                   border: Border.all(
                     color: AppColors.seaGreen,
-                    width: 2.0,
+                    width: 2.0.w,
                   ),
                 ),
                 child: Center(
@@ -97,7 +97,7 @@ class _ServicesRenderdState extends State<ServicesRenderd> {
                   borderRadius: BorderRadius.circular(20.r),
                   border: Border.all(
                     color: AppColors.seaGreen,
-                    width: 2.0,
+                    width: 2.0.w,
                   ),
                 ),
                 child: Center(

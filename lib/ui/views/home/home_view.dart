@@ -61,7 +61,7 @@ class _HomeViewState extends State<HomeView> {
               borderRadius: BorderRadius.circular(20.r),
               border: Border.all(
                 color: AppColors.seaGreen,
-                width: 2.0,
+                width: 2.0.w,
               ),
             ),
             child: Column(
@@ -93,7 +93,7 @@ class _HomeViewState extends State<HomeView> {
           SizedBox(height: 30.h),
 
           Text(
-            "Purchase Subscription 🎉",
+            "Purchase cheap subscription 🎉",
             style: theme.textTheme.headlineSmall?.copyWith(
               color: AppColors.black,
             ),
