@@ -76,9 +76,9 @@ class _HomeViewState extends State<HomeView> {
                     color: AppColors.black,
                   ),
                 ),
-                SizedBox(
-                  height: 20.h,
-                ),
+                // SizedBox(
+                //   height: 20.h,
+                // ),
                 Text(
                   "₦${1000}",
                   style: theme.textTheme.headlineLarge?.copyWith(
@@ -99,7 +99,7 @@ class _HomeViewState extends State<HomeView> {
             ),
           ),
           SizedBox(height: 30.h),
-          const DataPurchaseUi(),
+          const CheapSubscriptionUi(),
         ],
       )),
     );

@@ -1,17 +1,18 @@
 import 'package:bytebuddies/ui/common/app_colors.dart';
 import 'package:bytebuddies/ui/views/airtime%20purchase/airtime_purchase_view.dart';
+import 'package:bytebuddies/ui/views/cable%20tv/cabletv_view.dart';
 import 'package:bytebuddies/ui/views/data%20purchase/datapurchase_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class DataPurchaseUi extends StatefulWidget {
-  const DataPurchaseUi({super.key});
+class CheapSubscriptionUi extends StatefulWidget {
+  const CheapSubscriptionUi({super.key});
 
   @override
-  State<DataPurchaseUi> createState() => _DataPurchaseUiState();
+  State<CheapSubscriptionUi> createState() => _CheapSubscriptionUiState();
 }
 
-class _DataPurchaseUiState extends State<DataPurchaseUi> {
+class _CheapSubscriptionUiState extends State<CheapSubscriptionUi> {
   @override
   Widget build(BuildContext context) {
     ThemeData theme = Theme.of(context);
@@ -136,8 +137,11 @@ class _DataPurchaseUiState extends State<DataPurchaseUi> {
               ),
             ),
             InkWell(
-              onTap: () {
-                print("cable tvclicked");
+             onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => CableTvView()),
+                );
               },
               child: Container(
                 height: 90.h,

@@ -4,14 +4,14 @@ import 'package:bytebuddies/ui/views/widgets/transaction_pin.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class DataPurchaseView extends StatefulWidget {
-  const DataPurchaseView({Key? key}) : super(key: key);
+class CableTvView extends StatefulWidget {
+  const CableTvView({Key? key}) : super(key: key);
 
   @override
-  _DataPurchaseViewState createState() => _DataPurchaseViewState();
+  _CableTvViewState createState() => _CableTvViewState();
 }
 
-class _DataPurchaseViewState extends State<DataPurchaseView> {
+class _CableTvViewState extends State<CableTvView> {
   String _selectedNetwork = '-1';
   String _selectedDataType = '-1';
   String _selectedDataOption = '-1';
@@ -137,7 +137,7 @@ class _DataPurchaseViewState extends State<DataPurchaseView> {
         backgroundColor: AppColors.seaGreen,
         title: Center(
           child: Text(
-            'Data Purchase',
+            'Cable Tv',
             style: TextStyle(
               color: AppColors.white,
             ),
@@ -170,7 +170,7 @@ class _DataPurchaseViewState extends State<DataPurchaseView> {
                     DropdownMenuItem(
                       value: '-1',
                       child: Text(
-                        '-Select Network-',
+                        '-Cable name-',
                         style: theme.textTheme.titleSmall?.copyWith(
                           color: AppColors.black,
                         ),
@@ -179,7 +179,7 @@ class _DataPurchaseViewState extends State<DataPurchaseView> {
                     DropdownMenuItem(
                       value: '-2',
                       child: Text(
-                        'MTN',
+                        'DSTV',
                         style: theme.textTheme.titleSmall?.copyWith(
                           color: AppColors.black,
                         ),
@@ -188,7 +188,7 @@ class _DataPurchaseViewState extends State<DataPurchaseView> {
                     DropdownMenuItem(
                       value: '-3',
                       child: Text(
-                        'AIRTEL',
+                        'GOTV',
                         style: theme.textTheme.titleSmall?.copyWith(
                           color: AppColors.black,
                         ),
@@ -197,88 +197,28 @@ class _DataPurchaseViewState extends State<DataPurchaseView> {
                     DropdownMenuItem(
                       value: '-4',
                       child: Text(
-                        '9MOBILE',
+                        'STARTIME',
                         style: theme.textTheme.titleSmall?.copyWith(
                           color: AppColors.black,
                         ),
                       ),
                     ),
-                    DropdownMenuItem(
-                      value: '-5',
-                      child: Text(
-                        'GLO',
-                        style: theme.textTheme.titleSmall?.copyWith(
-                          color: AppColors.black,
-                        ),
-                      ),
-                    ),
+                    // DropdownMenuItem(
+                    //   value: '-5',
+                    //   child: Text(
+                    //     'GLO',
+                    //     style: theme.textTheme.titleSmall?.copyWith(
+                    //       color: AppColors.black,
+                    //     ),
+                    //   ),
+                    // ),
                   ],
                   onChanged: (value) {
                     setState(() {
                       _selectedNetwork = value.toString();
                       // Reset selected data type and data option when network changes
-                      _selectedDataType = '-1';
+
                       _selectedDataOption = '-1';
-                    });
-                  },
-                ),
-                SizedBox(
-                  height: 30.h,
-                ),
-                DropdownButtonFormField(
-                  borderRadius: BorderRadius.circular(8.r),
-                  decoration: InputDecoration(
-                    enabledBorder: OutlineInputBorder(
-                      borderSide: BorderSide(color: AppColors.black),
-                      borderRadius: BorderRadius.circular(8.r),
-                    ),
-                    focusedBorder: OutlineInputBorder(
-                      borderSide: BorderSide(color: AppColors.black),
-                      borderRadius: BorderRadius.circular(8.r),
-                    ),
-                  ),
-                  value: _selectedDataOption,
-                  items: [
-                    DropdownMenuItem(
-                      value: '-1',
-                      child: Text(
-                        '-Select Data Option-',
-                        style: theme.textTheme.titleSmall?.copyWith(
-                          color: AppColors.black,
-                        ),
-                      ),
-                    ),
-                    DropdownMenuItem(
-                      value: 'SME',
-                      child: Text(
-                        'SME',
-                        style: theme.textTheme.titleSmall?.copyWith(
-                          color: AppColors.black,
-                        ),
-                      ),
-                    ),
-                    DropdownMenuItem(
-                      value: 'Gifting',
-                      child: Text(
-                        'Gifting',
-                        style: theme.textTheme.titleSmall?.copyWith(
-                          color: AppColors.black,
-                        ),
-                      ),
-                    ),
-                    DropdownMenuItem(
-                      value: 'Corporate Gifting',
-                      child: Text(
-                        'Corporate Gifting',
-                        style: theme.textTheme.titleSmall?.copyWith(
-                          color: AppColors.black,
-                        ),
-                      ),
-                    ),
-                  ],
-                  onChanged: (value) {
-                    setState(() {
-                      _selectedDataOption = value.toString();
                     });
                   },
                 ),
@@ -302,7 +242,7 @@ class _DataPurchaseViewState extends State<DataPurchaseView> {
                     DropdownMenuItem(
                       value: '-1',
                       child: Text(
-                        '-Select Data Type',
+                        '-Select cable plan',
                         style: theme.textTheme.titleSmall?.copyWith(
                           color: AppColors.black,
                         ),
@@ -326,26 +266,8 @@ class _DataPurchaseViewState extends State<DataPurchaseView> {
                   },
                 ),
                 SizedBox(height: 30.h),
-                TextFormField(
-                  decoration: InputDecoration(
-                    labelText: 'Enter phone number',
-                    labelStyle: TextStyle(color: AppColors.black),
-                    enabledBorder: OutlineInputBorder(
-                      borderSide: BorderSide(color: AppColors.black),
-                      borderRadius: BorderRadius.circular(8.r),
-                    ),
-                    focusedBorder: OutlineInputBorder(
-                      borderSide: BorderSide(color: AppColors.black),
-                      borderRadius: BorderRadius.circular(8.r),
-                    ),
-                  ),
-                  style: theme.textTheme.titleSmall?.copyWith(
-                    color: AppColors.black,
-                  ),
-                ),
-                SizedBox(height: 30.h),
                 TransactionPin(),
-                SizedBox(height: 200.h),
+                SizedBox(height: 400.h),
                 ElevatedButton(
                   onPressed: () {
                     // Add your button onPressed logic here
