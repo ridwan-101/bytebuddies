@@ -1,6 +1,7 @@
 import 'package:bytebuddies/ui/common/app_colors.dart';
 import 'package:bytebuddies/ui/views/airtime%20purchase/airtime_purchase_view.dart';
 import 'package:bytebuddies/ui/views/bottom_navigator/bottom_navigator_view.dart';
+import 'package:bytebuddies/ui/views/data%20purchase/datapurchase_view.dart';
 import 'package:flutter/material.dart';
 
 class NavBar extends StatelessWidget {
@@ -65,7 +66,13 @@ class NavBar extends StatelessWidget {
                 color: AppColors.black,
               ),
             ),
-            onTap: () => print("Menu purchase data clicked"),
+        onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const DataPurchaseView()),
+                );
+              }
           ),
           ListTile(
             leading: Icon(

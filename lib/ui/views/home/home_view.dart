@@ -1,6 +1,6 @@
 import 'package:bytebuddies/ui/common/app_colors.dart';
 import 'package:bytebuddies/ui/common/ui_helpers.dart';
-import 'package:bytebuddies/ui/views/home/widget/data_purchase.dart';
+import 'package:bytebuddies/ui/views/home/widget/cheap-subscription.dart';
 import 'package:bytebuddies/ui/views/home/widget/services_renderd.dart';
 import 'package:bytebuddies/ui/views/nav%20bar/navbar.dart';
 import 'package:flutter/material.dart';
@@ -76,9 +76,9 @@ class _HomeViewState extends State<HomeView> {
                     color: AppColors.black,
                   ),
                 ),
-                SizedBox(
-                  height: 20.h,
-                ),
+                // SizedBox(
+                //   height: 20.h,
+                // ),
                 Text(
                   "₦${1000}",
                   style: theme.textTheme.headlineLarge?.copyWith(
@@ -99,7 +99,7 @@ class _HomeViewState extends State<HomeView> {
             ),
           ),
           SizedBox(height: 30.h),
-          const DataPurchaseUi(),
+          const CheapSubscriptionUi(),
         ],
       )),
     );

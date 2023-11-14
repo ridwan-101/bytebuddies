@@ -1,8 +1,7 @@
 import 'package:bytebuddies/ui/common/app_colors.dart';
 import 'package:bytebuddies/ui/common/ui_helpers.dart';
-import 'package:bytebuddies/ui/extensions/palette.dart';
 import 'package:bytebuddies/ui/views/airtime%20purchase/widget/quick_topup.dart';
-import 'package:bytebuddies/ui/views/nav%20bar/navbar.dart';
+import 'package:bytebuddies/ui/views/widgets/transaction_pin.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -18,15 +17,13 @@ class _AirtimePurchaseViewState extends State<AirtimePurchaseView> {
   @override
   Widget build(BuildContext context) {
     ThemeData theme = Theme.of(context);
-    Palette? palette = theme.extension<Palette>();
     return Scaffold(
-      drawer: const NavBar(),
       appBar: AppBar(
         elevation: 0,
         backgroundColor: AppColors.seaGreen,
         title: Center(
           child: Text(
-            'Buy Airtime',
+            'Airtime',
             style: TextStyle(
               color: AppColors.white,
             ),
@@ -140,9 +137,11 @@ class _AirtimePurchaseViewState extends State<AirtimePurchaseView> {
                   style: theme.textTheme.titleSmall?.copyWith(
                     color: AppColors.black,
                   )),
+              SizedBox(height: 30.h),
+              TransactionPin(),
             ],
           ),
-          SizedBox(height: 200.h),
+          SizedBox(height: 100.h),
           ElevatedButton(
             onPressed: () {
               // Add your button onPressed logic here
@@ -156,7 +155,7 @@ class _AirtimePurchaseViewState extends State<AirtimePurchaseView> {
               minimumSize: const Size(150, 50),
             ),
             child: const Text('Confirm'),
-          )
+          ),
         ],
       )),
     );
