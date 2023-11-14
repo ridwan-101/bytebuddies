@@ -20,7 +20,6 @@ class _AirtimePurchaseViewState extends State<AirtimePurchaseView> {
     ThemeData theme = Theme.of(context);
     Palette? palette = theme.extension<Palette>();
     return Scaffold(
-      drawer: const NavBar(),
       appBar: AppBar(
         elevation: 0,
         backgroundColor: AppColors.seaGreen,
@@ -156,7 +155,7 @@ class _AirtimePurchaseViewState extends State<AirtimePurchaseView> {
               minimumSize: const Size(150, 50),
             ),
             child: const Text('Confirm'),
-          )
+          ),
         ],
       )),
     );

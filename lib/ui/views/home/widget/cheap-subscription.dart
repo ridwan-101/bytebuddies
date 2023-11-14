@@ -1,5 +1,6 @@
 import 'package:bytebuddies/ui/common/app_colors.dart';
 import 'package:bytebuddies/ui/views/airtime%20purchase/airtime_purchase_view.dart';
+import 'package:bytebuddies/ui/views/data%20purchase/datapurchase_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -59,7 +60,10 @@ class _DataPurchaseUiState extends State<DataPurchaseUi> {
             ),
             InkWell(
               onTap: () {
-                print("Purchase Data clicked");
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => DataPurchaseView()),
+                );
               },
               child: Container(
                 height: 90.h,

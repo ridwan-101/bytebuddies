@@ -1,6 +1,6 @@
 import 'package:bytebuddies/ui/common/app_colors.dart';
 import 'package:bytebuddies/ui/common/ui_helpers.dart';
-import 'package:bytebuddies/ui/views/home/widget/data_purchase.dart';
+import 'package:bytebuddies/ui/views/home/widget/cheap-subscription.dart';
 import 'package:bytebuddies/ui/views/home/widget/services_renderd.dart';
 import 'package:bytebuddies/ui/views/nav%20bar/navbar.dart';
 import 'package:flutter/material.dart';
